@@ -1,0 +1,133 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+*{
+    margin:0;
+    padding:0;
+}
+/* chinh hieu ung load trang tu tu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body{
+    font-family: "Poppins";
+    background-image: url("images/ngang1.jpg");
+    background-repeat: no-repeat;
+    animation: fadeIn 2s ease-in; /* Hiệu ứng kéo dài 2 giây */
+    /* background-position-x: linear-gradient(#6AD997,#BBEAC6); */
+}
+.navbar {
+    background-color: lightblue;
+    height: 80px; /* Điều chỉnh chiều cao của navbar */
+}
+.round-image {
+    border-radius: 50%;
+    margin-left: 1.5cm;
+    overflow: hidden;
+}
+.nav-item {
+    margin-right: 20px; /* Tạo khoảng cách giữa các mục */
+    font-size: 1.5em;
+}
+.nav-item:hover{
+    color: #63C05F;
+    text-decoration: underline #63C05F;
+    font-size: 1.4em;
+}
+.image-container {
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: center; /* Căn giữa các phần tử trên navbar */
+}
+/*chữ chạy*/
+.typewriter {
+    font-size: 1cm;
+    color: white;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 1.5cm;
+}
+
+/* Con trỏ nhấp nháy */
+.typewriter::after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 1em;
+    background: white;
+    animation: blink 0.7s steps(1) infinite;
+    vertical-align: bottom;
+    margin-left: 1.5cm;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+h3{
+    margin-left: 0.5cm;
+    font-size: 0.7cm;
+    color: white;
+}
+h1{
+    margin-left: 0.7cm;
+    font-size: 1.5cm;
+    color: white;
+}
+.mota{
+    font-size: 0.5cm;
+    color: white;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 1.5cm;
+}
+.card{
+    width:10cm;
+    height:auto;
+    text-align: center;
+    color: #494949;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: linear-gradient(to right,#a1c4fd, #c2e9fb);
+
+}
+.card-header{
+    background: linear-gradient(to left,#a1c4fd, #c2e9fb);
+}
+.btn
+{
+    background: white;
+}
+.contact{
+    text-align: center;
+    justify-content: center;
+}
+.icon{
+    margin-left: 20px;
+}
+h4{
+    text-align: center;
+    margin-top: 0.2cm;
+    color:darkgray;
+}
+h8{
+    color:#8cb2ee;
+}
+h9{
+    margin-left: 0.6cm;
+}
+h10{
+    color:tomato;
+    font-size: 0.5cm;
+    text-align: center;
+}
