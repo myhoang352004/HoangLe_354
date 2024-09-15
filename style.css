@@ -17,11 +17,13 @@ body{
     background-image: url("images/ngang1.jpg");
     background-repeat: no-repeat;
     animation: fadeIn 2s ease-in; /* Hiệu ứng kéo dài 2 giây */
-    /* background-position-x: linear-gradient(#6AD997,#BBEAC6); */
 }
 .navbar {
     background-color: lightblue;
     height: 80px; /* Điều chỉnh chiều cao của navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Đảm bảo navbar nằm trên các phần tử khác */
 }
 .round-image {
     border-radius: 50%;
@@ -92,10 +94,11 @@ h1{
     margin-left: 1.5cm;
 }
 .card{
-    width:10cm;
+    width:9.2cm;
     height:auto;
     text-align: center;
     color: #494949;
+    margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
     background: linear-gradient(to right,#a1c4fd, #c2e9fb);
@@ -125,6 +128,9 @@ h8{
 }
 h9{
     margin-left: 0.6cm;
+}
+h6{
+    margin-top: 0.2cm;
 }
 h10{
     color:tomato;
