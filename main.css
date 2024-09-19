@@ -25,148 +25,17 @@
     padding: 0;
     margin: 0;
 }
-/* chinh hieu ung load trang tu tu */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
 body{
-    font-family: "Poppins";
-    background-image: url("images/ngang1.jpg");
-    background-repeat: no-repeat;
-    animation: fadeIn 2s ease-in; /* Hiệu ứng kéo dài 2 giây */
-    background-color: #ffe0e4;
-}
-.navbar {
-    background-color: lightblue;
-    height: 80px; /* Điều chỉnh chiều cao của navbar */
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Đảm bảo navbar nằm trên các phần tử khác */
-}
-.round-image {
-    border-radius: 50%;
-    margin-left: 1.5cm;
-    overflow: hidden;
-}
-.nav-item {
-    margin-right: 20px; /* Tạo khoảng cách giữa các mục */
-    font-size: 1.5em;
-}
-.nav-item:hover{
-    color: #63C05F;
-    text-decoration: underline #63C05F;
-    font-size: 1.4em;
-}
-.image-container {
-    margin-top: 20px;
-    border-radius: 50%;
-}
-.navbar-nav {
-    flex-grow: 1;
-    justify-content: center; /* Căn giữa các phần tử trên navbar */
-}
-/*chữ chạy*/
-.typewriter {
-    font-size: 1cm;
-    color: white;
-    border-right: 2px solid;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-left: 1.5cm;
+    font-family: var(--body-font);
+    background-color: black;
+    color: var(--text-color);
 }
 
-/* Con trỏ nhấp nháy */
-.typewriter::after {
-    content: "";
-    display: inline-block;
-    width: 4px;
-    height: 1em;
-    background: white;
-    animation: blink 0.7s steps(1) infinite;
-    vertical-align: bottom;
-    margin-left: 1.5cm;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-h2{
-    font-size: 1.2cm;
-}
-h3{
-    margin-left: 0.5cm;
-    font-size: 0.7cm;
-    color: white;
-}
-h1{
-    margin-left: 0.7cm;
-    font-size: 1.5cm;
-    color: white;
-}
-.mota{
-    font-size: 0.5cm;
-    color: white;
-    border-right: 2px solid;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-top: 20px;
-    margin-left: 1.5cm;
-}
-.card{
-    width:9.2cm;
-    height:auto;
-    text-align: center;
-    color: #494949;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    background: linear-gradient(to right,#a1c4fd, #c2e9fb);
-
-}
-.card-header{
-    background: linear-gradient(to left,#a1c4fd, #c2e9fb);
-}
-.btn
-{
-    background: white;
-}
-.contact{
-    text-align: center;
-    justify-content: center;
-}
-.icon{
-    margin-left: 20px;
-}
-h4{
-    text-align: center;
-    margin-top: 0.2cm;
-    color:darkgray;
-}
-h8{
-    color:#8cb2ee;
-}
-h9{
-    margin-left: 0.6cm;
-    margin-bottom: 1cm;
-}
-h6{
-    margin-top: 0.2cm;
-}
-h10{
-    color:tomato;
-    font-size: 0.5cm;
-    text-align: center;
-}
-.hinh
-{
-    margin-right: 1cm;
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*=============CARD==============*/
@@ -175,8 +44,6 @@ h10{
     place-items: center;
     margin-inline: 1.5rem;
     padding-block: 5rem;
-    margin-left: 2cm;
-    margin-top: 0cm;
 }
 
 .card__container{
@@ -191,7 +58,7 @@ h10{
 
 .card__data {
     width: 280px;
-    background: linear-gradient(to left,#a1c4fd , #c2e9fb);;
+    background-color: var(--container-color);
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
@@ -208,6 +75,8 @@ h10{
     width: 328px;
     border-radius: 1.5rem;
 }
+
+
 .card__description{
     display: block;
     font-size: var(--small-font-size);
@@ -221,7 +90,7 @@ h10{
 }
 .card__button{
     text-decoration: none;
-    font-size: 0.5cm;
+    font-size: var(--small-font-size);
     font-weight: 500;
     color: var(--first-color);
 }  
@@ -247,6 +116,7 @@ h10{
 .card__article:not(:hover) .card__data{
     animation: remove-data 1s forwards;
 }  
+
 /*Card animation*/
 @keyframes show-data{
     50%{
