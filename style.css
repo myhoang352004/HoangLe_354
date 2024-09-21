@@ -140,6 +140,7 @@ h1{
 .contact{
     text-align: center;
     justify-content: center;
+    margin-left: -1cm;
 }
 .icon{
     margin-left: 20px;
@@ -319,9 +320,9 @@ h10{
 }
 .wrapper {
     display: inline-flex;
-    margin-left: 11.5cm;
+    margin-left: 10.5cm;
     margin-bottom: 1cm;
-    margin-top: 3cm;
+    margin-top: 5cm;
   }
   
   .wrapper .icon {
